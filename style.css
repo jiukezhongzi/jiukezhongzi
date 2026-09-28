@@ -77,8 +77,8 @@ main{padding-bottom:40px}
 @media(max-width:760px){.cards.cols4{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.2s}
 .card:hover{transform:translateY(-4px)}
-.card .ic{width:46px;height:46px;border-radius:12px;background:var(--brand-soft);color:var(--brand);
-  display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;margin-bottom:14px}
+.card .ic{width:auto;min-width:46px;height:46px;padding:0 13px;border-radius:12px;background:var(--brand-soft);color:var(--brand);
+  display:inline-flex;align-items:center;justify-content:center;font-size:17px;font-weight:700;letter-spacing:1px;margin-bottom:14px;white-space:nowrap}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{color:var(--soft);font-size:15px}
 .card .price{display:inline-block;margin-top:14px;font-size:14px;color:var(--brand);font-weight:600}
@@ -154,3 +154,13 @@ footer{background:#312a24;color:#e9dfd2;padding:44px 0 24px;margin-top:20px}
 .foot-grid a:hover{color:#fff}
 .foot-bottom{text-align:center;color:#8f8474;font-size:13px;margin-top:30px;padding-top:18px;border-top:1px solid #463c31}
 @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+
+
+/* 文末相关阅读与署名（案例页／观点页） */
+.rel-box{margin-top:34px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.rel-box h3{font-size:16px;font-weight:700;color:var(--brand);margin-bottom:12px}
+.rel-box ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.rel-box li{font-size:15px;line-height:1.6}
+.rel-box a{color:var(--brand);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+.rel-box a:hover{border-bottom-color:var(--accent2)}
+.signature{font-size:13px;color:var(--soft);margin-top:18px;line-height:1.7}
